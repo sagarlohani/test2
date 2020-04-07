@@ -1,0 +1,10 @@
+<html>
+{% extends "layout.html" %}
+{% block body %}
+<form action="{{ url_for('get_mail') }}" method=POST>
+  <label>Enter Your Email ID:</label>
+  <input type="text" id="email" name="Email"><br><br>
+  <input type="submit" value="Submit">
+</form>
+{% endblock %}
+</html>
